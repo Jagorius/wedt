@@ -1,0 +1,39 @@
+# encoding: UTF-8
+require 'rubygems'
+require 'rss/1.0'
+require 'rss/2.0'
+require 'open-uri'
+require 'hpricot'
+require 'pp'
+require 'stemmer'
+load 'naive_bayes.rb'
+
+categories = %w(tech sports business entertainment)
+classifier = NaiveBayes.new(*categories)
+
+content =''
+categories.each { |category|
+  feed = "http://news.yahoo.com/rss/#{category}"
+  open(feed) do |s| content = s.read end
+  rss = RSS::Parser.parse(content, false)
+  rss.items.each { |item|
+    text = Hpricot(item.description).inner_text
+    classifier.train(category, text)
+  }
+}
+  # classify this
+  documents = [
+  "Google said on Monday it was releasing a beta version of Google Sync for the iPhone and Windows Mobile phones",
+  "Rangers waste 5 power plays in 3-0 loss to Devils",
+  "Going well beyond its current Windows Mobile software, Microsoft will try to extend its desktop dominance with a Windows phone.",
+  "UBS cuts jobs after Q4 loss",
+  "A fight in Hancock Park after a pre-Grammy Awards party left the singer with bruises and a scratched face, police say."]
+
+  documents.each { |text|
+    puts text
+    puts "category => #{classifier.classify(text)}"
+    puts
+}
+
+  puts "Asia"
+
