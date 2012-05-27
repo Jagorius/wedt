@@ -1,4 +1,5 @@
 # encoding: UTF-8
+require 'yaml'
 require 'rubygems'
 require 'rss/1.0'
 require 'rss/2.0'
@@ -34,6 +35,8 @@ categories.each { |category|
     puts "category => #{classifier.classify(text)}"
     puts
 }
-
+  classifier.exportData
   puts "Asia"
+
+
 

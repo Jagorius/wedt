@@ -1,5 +1,43 @@
 class NaiveBayes
   COMMON_WORDS = ['a','able','about','above','abroad']
+  FILE_PATH = "/settings/"
+
+  def saveYaml(variable, name)
+    log = File.open( Dir.pwd + FILE_PATH + name + ".yaml" ,'w+') do |f|
+          f.puts variable.to_yaml
+    end
+  end
+
+  def getYaml(name)
+    if(File.exist?(Dir.pwd + FILE_PATH + name + ".yaml") == false)
+      return nil
+    end
+    return YAML::load( File.open( Dir.pwd + FILE_PATH + name + ".yaml", 'r') )
+  end
+
+  def exportData
+    saveYaml(@words,"words")
+    saveYaml(@total_words,"total_words")
+    saveYaml(@categories_documents,"categories_documents")
+    saveYaml(@total_documents,"total_documents")
+    saveYaml(@categories_words,"categories_words")
+    saveYaml(@threshold,"threshold")
+  end
+
+  def importData
+    @words = getYaml("words")
+    @total_words = getYaml("total_words")
+    @categories_documents = getYaml("categories_documents")
+    @total_documents = getYaml("total_documents")
+    @categories_words = getYaml("categories_words")
+    @threshold = getYaml("threshold")
+    if(@words != nil && @total_words != nil && @categories_documents!= nil &&
+        @total_documents != nil && @categories_words!= nil && @threshold!= nil)
+      return true
+    end
+    return false
+  end
+
   def initialize(*categories)
     @words = Hash.new
     @total_words = 0
@@ -7,12 +45,20 @@ class NaiveBayes
     @total_documents = 0
     @categories_words = Hash.new
     @threshold = 1.5
-    categories.each { |category|
-      @words[category] = Hash.new
-      @categories_documents[category] = 0
-      @categories_words[category] = 0
-    }
-    puts @words
+    hi = importData
+    if(hi != true)
+      categories.each { |category|
+        @words[category] = Hash.new
+        @categories_documents[category] = 0
+        @categories_words[category] = 0
+      }
+    end
+    puts @words.to_s
+    puts @total_words
+    puts @categories_documents.to_s
+    puts @total_documents
+    puts @categories_words.to_s
+    puts @threshold
   end
 
   def word_count(document)
