@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e6979f8-3da8-4e2f-97c3-f57713d687f1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main" afterPath="$PROJECT_DIR$/main" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/naive_bayes.rb" afterPath="$PROJECT_DIR$/naive_bayes.rb" />
     </list>
     <ignored path="wedty.iws" />
@@ -30,19 +28,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="41" selection-start="124" selection-end="124" vertical-scroll-proportion="0.2635659">
+            <state line="6" column="41" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="naive_bayes.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="naive_bayes.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/naive_bayes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="67" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
+            <state line="14" column="70" selection-start="434" selection-end="434" vertical-scroll-proportion="0.595">
               <folding />
             </state>
           </provider>
@@ -392,16 +390,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/naive_bayes.rb">
+    <entry file="file://$PROJECT_DIR$/main">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="67" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
+        <state line="6" column="41" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main">
+    <entry file="file://$PROJECT_DIR$/naive_bayes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="41" selection-start="124" selection-end="124" vertical-scroll-proportion="0.2635659">
+        <state line="14" column="70" selection-start="434" selection-end="434" vertical-scroll-proportion="0.595">
           <folding />
         </state>
       </provider>

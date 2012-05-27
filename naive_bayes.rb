@@ -47,6 +47,12 @@ class NaiveBayes
     @threshold = 1.5
     hi = importData
     if(hi != true)
+      @words = Hash.new
+      @total_words = 0
+      @categories_documents = Hash.new
+      @total_documents = 0
+      @categories_words = Hash.new
+      @threshold = 1.5
       categories.each { |category|
         @words[category] = Hash.new
         @categories_documents[category] = 0
