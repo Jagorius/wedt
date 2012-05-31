@@ -1,0 +1,91 @@
+<file>
+	<train>
+		<category>Contacts</category>
+			<text>Banacha 2, 02-097 Warszawa, Poland. Phone: +48 22 55 44 501 Fax: +48 22 55 44 300 E-mail: Leszek.Marcinkowski@mimuw.edu.pl
+				Office: 5th floor, room no 5010 in the northern tower (close to a staircase) Office hours Summer semester 2011/12: Wednesday 11-12am 
+			</text>
+	</train>
+	<train>
+		<category>About me</category>
+			<text>Scientific interests numerical methods partial differential equations numerical methods for differential equations
+				domain decomposition methods
+			</text>
+	</train>
+	<train>
+		<category>Publications</category>
+			<text>Publications</text>
+	</train>
+	<train>
+		<category>Lectures</category>
+			<text>Current teaching activities</text>
+	</train>
+	<train>
+		<category>Links</category>
+			<text>WWW pages</text>
+	</train>
+	
+	<train>
+		<category>Contacts</category>
+			<text>Banacha 2, 02-097 Warszawa, POLAND Room 5520 Office hours: Mondays, 11-13 
+				email: rlatala "at" mimuw "dot" edu "dot" pl 
+			</text>
+	</train>
+	<train>
+		<category>About me</category>
+			<text>Personal Information Born November 24, 1971 in Warsaw
+				Address: Institute of Mathematics, University of Warsaw, Banacha 2, 02-097 Warszawa, Poland
+				Phone: +48(22)5544552, Fax: +48(22)5544552
+				Degrees
+				2009 Title of professor (awarded by the President of Poland)
+				2002 Habilitation degree in Mathematics, University of Warsaw
+				1997 PhD in Mathematics, University of Warsaw (PhD Dissertation Estimation of moments of sums of independent random variables (in Polish), thesis advisor prof. dr hab. Stanislaw Kwapien)
+				1994 MSc degree in Mathematics, University of Warsaw
+				Employment
+				2003-present Associate Professor, Institute of Mathematics University of Warsaw
+				2009-2012 Professor, Institute of Mathematics of the Polish Academy of Sciences (part time)
+				2007-2009 Associate Professor (Docent), Institute of Mathematics of the Polish Academy of Sciences
+				1997-2003 Assistant Professor, Institute of Mathematics University of Warsaw
+				1994-97 Instructor, Institute of Mathematics University of Warsaw
+
+			</text>
+	</train>
+	<train>
+		<category>Publications</category>
+			<text>Papers by Rafal Latala</text>
+	</train>
+	<train>
+		<category>Lectures</category>
+			<text>Current teaching activities</text>
+	</train>
+	<train>
+		<category>Links</category>
+			<text>Links</text>
+	</train>
+	
+	<train>
+		<category>Contacts</category>
+			<text>E-mail: P.Bechler@mimuw.edu.pl 
+					Room: 4230 
+					Telephone: +48-22-5544-423  
+			</text>
+	</train>
+	<train>
+		<category>About me</category>
+			<text>CV</text>
+	</train>
+	<train>
+		<category>Publications</category>
+			<text>Papers List of publications</text>
+	</train>
+	<train>
+		<category>Lectures</category>
+			<text>Teaching Students. Up to 20% of final grade points can be awarded for active participation in the classes.
+			Up to 30% of final grade points can be awarded for the mid-term exam, which will take place in December.
+			</text>
+	</train>
+	<train>
+		<category>Links</category>
+			<text>Slides for some of my talks</text>
+	</train>
+	
+</file>
